@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.coldstore {
+    background-color: #fff;
+    border: #262626 solid 20px;
+}
+
+.signboard {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f3f3f3;;
+}
+
+.board {
+    color: #262626;
+    height: 110px;
+    font-family: 'Romanesque', cursive;
+    font-size: 80px;
+}
+
+.compartment {
+    display: grid;
+    /*grid-gap: 20px;*/
+    border-top: #262626 solid 20px;
+}
+
+.beer {
+    background: linear-gradient(0deg, white 1%, #e0e0e0 34%, #b6b6b6 35%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+    cursor: pointer;
+}
+
+.vertical img {
+    transform: rotate(0deg);
+    margin-bottom: 5%;
+}
+
+.horizontal img {
+    transform: rotate(90deg);
+    margin-bottom: -20%;
+}
+
+.beer img {
+    object-fit: contain;
+    width: 100%;
+    height: 90%;
+    transition: .5s;
+}
+
+.lattice {
+    border-top: #262626 solid 20px;
+    background-color: #262626;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.ventilation {
+    background: black;
+    height: 20px;
+}
+
+.block {
+    padding: 20px;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Romanesque";
+    src: url("fonts/Romanesque.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
